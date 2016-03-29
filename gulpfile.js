@@ -30,7 +30,10 @@ gulp.task('validateSyntax-eslint', [], function () {
       semi: [2, 'always'],
       'no-unused-vars': 1,
       'no-console': 0,
-      'angular/controller-name': [1, '/[A-Z].*Controller$/']
+      'angular/controller-name': [1, '/[A-Z].*Controller$/'],
+      'angular/directive-name': [2, 'cus'],
+      'angular/empty-controller': 2,
+      'angular/filter-name': [2, 'flr']
     }
   }))
   .pipe(eslint.format())
